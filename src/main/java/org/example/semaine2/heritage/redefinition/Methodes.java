@@ -1,4 +1,4 @@
-package org.example.heritage.redefinition;
+package org.example.semaine2.heritage.redefinition;
 
 class Animal {
     public void manger() {

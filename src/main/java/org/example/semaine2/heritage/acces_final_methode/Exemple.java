@@ -1,4 +1,4 @@
-package org.example.heritage.acces_final_methode;
+package org.example.semaine2.heritage.acces_final_methode;
 
 class Animal {
     public final void respirer() {

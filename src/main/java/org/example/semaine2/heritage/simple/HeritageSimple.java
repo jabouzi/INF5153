@@ -1,4 +1,4 @@
-package org.example.heritage.simple;
+package org.example.semaine2.heritage.simple;
 
 //Un exemple de la l’héritage en Java:
 

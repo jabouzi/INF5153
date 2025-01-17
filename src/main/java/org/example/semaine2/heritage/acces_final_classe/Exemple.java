@@ -1,4 +1,4 @@
-package org.example.heritage.acces_final_classe;
+package org.example.semaine2.heritage.acces_final_classe;
 
 final class Oiseau {
     public void voler() {

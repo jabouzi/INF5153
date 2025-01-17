@@ -1,4 +1,4 @@
-package org.example.heritage.polymorphisme;
+package org.example.semaine2.heritage.polymorphisme;
 
 class Animal {
     public void salutation() {

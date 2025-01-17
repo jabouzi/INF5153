@@ -1,4 +1,4 @@
-package org.example.heritage.constructeurs;
+package org.example.semaine2.heritage.constructeurs;
 
 // Classe parent :
 class Animal {

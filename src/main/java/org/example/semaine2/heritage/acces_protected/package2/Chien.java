@@ -1,6 +1,6 @@
-package org.example.heritage.acces_protected.package2;
+package org.example.semaine2.heritage.acces_protected.package2;
 
-import org.example.heritage.acces_protected.package1.Animal;
+import org.example.semaine2.heritage.acces_protected.package1.Animal;
 
 public class Chien extends Animal {
     public Chien(String nom) {

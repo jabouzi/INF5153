@@ -1,4 +1,4 @@
-package org.example.heritage.masquage;
+package org.example.semaine2.heritage.masquage;
 
 class Parent {
     public String nom = "Parent";

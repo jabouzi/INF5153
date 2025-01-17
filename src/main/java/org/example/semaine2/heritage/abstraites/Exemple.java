@@ -1,4 +1,4 @@
-package org.example.heritage.abstraites;
+package org.example.semaine2.heritage.abstraites;
 
 abstract class Animal {
     protected String nom;

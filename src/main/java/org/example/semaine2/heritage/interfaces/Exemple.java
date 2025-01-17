@@ -1,4 +1,4 @@
-package org.example.heritage.interfaces;
+package org.example.semaine2.heritage.interfaces;
 
 interface Volant {
     void voler();

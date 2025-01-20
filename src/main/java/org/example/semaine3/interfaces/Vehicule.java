@@ -3,6 +3,7 @@ package org.example.semaine3.interfaces;
 import java.util.List;
 
 public interface Vehicule {
+    String getId(); // Id du véhicule
     String getType(); // Type de véhicule
     String getNumeroSerie(); // Numéro de série
     List<String> getProprietaires(); // Liste des propriétaires

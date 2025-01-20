@@ -2,7 +2,8 @@ package org.example.semaine3.interfaces;
 
 import java.util.List;
 
-public class Voiture implements Vehicule {
+public class Moto implements Vehicule {
+
     private final String id;
     private final String numeroSerie;
     private final List<String> proprietaires;
@@ -10,7 +11,7 @@ public class Voiture implements Vehicule {
 
     // Des membres en extra
 
-    public Voiture(String id, String numeroSerie, List<String> proprietaires, List<String> historiqueAccidents) {
+    public Moto(String id, String numeroSerie, List<String> proprietaires, List<String> historiqueAccidents) {
         this.id = id;
         this.numeroSerie = numeroSerie;
         this.proprietaires = proprietaires;
@@ -22,7 +23,7 @@ public class Voiture implements Vehicule {
 
     @Override
     public String getType() {
-        return TypeVehicule.VOITURE.name();
+        return TypeVehicule.MOTO.name();
     }
 
     @Override

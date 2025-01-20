@@ -6,14 +6,15 @@ import java.util.List;
 public class VehiculeApi implements VehiculeApiInterface {
 
     @Override
-    public List<Vehicule> obtenirListeVehicules() throws InterruptedException {
+    public String[]  obtenirListeVehicules() throws InterruptedException {
         // Simule un délai réseau de 3 secondes
         Thread.sleep(3000);
 
         // Retourne une liste de véhicules (deux voitures dans ce cas)
-        return Arrays.asList(
-                new Voiture("123ABC", Arrays.asList("Jean Dupont"), Arrays.asList("Accident mineur en 2020")),
-                new Camion("456DEF", Arrays.asList("Marie Curie"), Arrays.asList("Aucun accident"))
-        );
+        return new String[]{
+                "VOITURE;1;1234ABC;Proprietaire1,Proprietaire2;Accident1,Accident2",
+                "CAMION;2;5678DEF;Proprietaire3;Accident3",
+                "MOTO;3;9876GHI;Proprietaire4,Proprietaire5;"
+        };
     }
 }

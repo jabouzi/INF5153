@@ -3,17 +3,23 @@ package org.example.semaine3.interfaces;
 import java.util.List;
 
 public class Camion implements Vehicule {
+
+    private final String id;
     private final String numeroSerie;
     private final List<String> proprietaires;
     private final List<String> historiqueAccidents;
 
     // Des membres en extra
 
-    public Camion(String numeroSerie, List<String> proprietaires, List<String> historiqueAccidents) {
+    public Camion(String id, String numeroSerie, List<String> proprietaires, List<String> historiqueAccidents) {
+        this.id = id;
         this.numeroSerie = numeroSerie;
         this.proprietaires = proprietaires;
         this.historiqueAccidents = historiqueAccidents;
     }
+
+    @Override
+    public String getId() { return id; }
 
     @Override
     public String getType() {

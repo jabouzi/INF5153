@@ -6,11 +6,12 @@ import java.util.List;
 public class VehiculeApiFake implements VehiculeApiInterface {
 
     @Override
-    public List<Vehicule> obtenirListeVehicules() {
+    public String[] obtenirListeVehicules() {
         // Retourne une liste de deux voitures pour le test
-        return Arrays.asList(
-                new Voiture("789GHI", Arrays.asList("Fake User 1"), Arrays.asList("Accident mineur")),
-                new Camion("012JKL", Arrays.asList("Fake User 2"), Arrays.asList("Aucun accident"))
-        );
+        return new String[]{
+                "VOITURE;1;12345ABC;Jean Dupont;Accident mineur en 2020",
+                "CAMION;2;98765XYZ;Société X;Aucun accident",
+                "MOTO;3;45678LMN;Paul Martin;Accident grave en 2019"
+        };
     }
 }

@@ -1,9 +1,12 @@
 package org.example.semaine3.injection_dependances;
 
-public class UserModel {
-    private final DatabaseConnection databaseConnection = new MySQLDatabaseConnection();
+public class UserModel1 {
+    private final DatabaseConnection databaseConnection;
 
-    public UserModel() { }
+    // Injection de la dépendance via le constructeur
+    public UserModel1(DatabaseConnection databaseConnection) {
+        this.databaseConnection = databaseConnection;
+    }
 
     public void afficherUtilisateurs() {
         databaseConnection.connect();

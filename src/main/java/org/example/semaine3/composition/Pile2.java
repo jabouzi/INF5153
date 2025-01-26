@@ -24,11 +24,19 @@ class Pile2<T> {
 
         // Ajout d'un élément dans la pile
         maPile.empiler("1");
+        maPile.empiler("2");
+        maPile.empiler("3");
+
+        //maPile.clear();
 
         // Retrait de l'élément au sommet de la pile
         String elementDepile = maPile.depiler();
+        String elementDepile2 = maPile.depiler();
+        String elementDepile3 = maPile.depiler();
 
         // Affichage de l'élément retiré
         System.out.println("Élément dépilé : " + elementDepile);
+        System.out.println("Élément dépilé : " + elementDepile2);
+        System.out.println("Élément dépilé : " + elementDepile3);
     }
 }

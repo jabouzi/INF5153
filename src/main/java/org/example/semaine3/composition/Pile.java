@@ -23,14 +23,17 @@ class Pile<T> extends ArrayList<T> {
 
         // Ajouter un élément dans la pile
         maPile.empiler("1");
+        maPile.empiler("2");
 
         // Vider la pile
         maPile.clear();
 
         // Retirer un élément de la pile
         String elementDepile = maPile.depiler();
+        String elementDepile2 = maPile.depiler();
 
         // Afficher l'élément retiré
         System.out.println("Élément dépilé : " + elementDepile);
+        System.out.println("Élément dépilé : " + elementDepile2);
     }
 }

@@ -1,0 +1,71 @@
+// Interface pour l'implémentation (appareils)
+interface Appareil {
+    void allumer();
+    void eteindre();
+}
+
+// Implémentations concrètes (lampe, ventilateur)
+class Lampe implements Appareil {
+    @Override
+    public void allumer() {
+        System.out.println("Lampe allumée");
+    }
+
+    @Override
+    public void eteindre() {
+        System.out.println("Lampe éteinte");
+    }
+}
+
+class Ventilateur implements Appareil {
+    @Override
+    public void allumer() {
+        System.out.println("Ventilateur allumé");
+    }
+
+    @Override
+    public void eteindre() {
+        System.out.println("Ventilateur éteint");
+    }
+}
+
+// Abstraction (interrupteur)
+abstract class Interrupteur {
+    protected Appareil appareil;
+
+    public Interrupteur(Appareil appareil) {
+        this.appareil = appareil;
+    }
+
+    public abstract void activer();
+}
+
+// Implémentation concrète de l'interrupteur
+class InterrupteurSimple extends Interrupteur {
+    public InterrupteurSimple(Appareil appareil) {
+        super(appareil);
+    }
+
+    @Override
+    public void activer() {
+        System.out.println("Interrupteur activé");
+        appareil.allumer();
+    }
+}
+
+// Exemple d'utilisation
+public class BridgePatternExample {
+    public static void main(String[] args) {
+        // Création des appareils
+        Appareil lampe = new Lampe();
+        Appareil ventilateur = new Ventilateur();
+
+        // Création des interrupteurs
+        Interrupteur interrupteurLampe = new InterrupteurSimple(lampe);
+        Interrupteur interrupteurVentilateur = new InterrupteurSimple(ventilateur);
+
+        // Utilisation des interrupteurs
+        interrupteurLampe.activer();
+        interrupteurVentilateur.activer();
+    }
+}

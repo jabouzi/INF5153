@@ -1,5 +1,6 @@
 package org.example.semaine3.fragilite;
 
+@SuppressWarnings("unchecked")
 class Pile2<T> {
 
     private T[] contenu = (T[]) new Object[1000]; // Tableau pour stocker les éléments

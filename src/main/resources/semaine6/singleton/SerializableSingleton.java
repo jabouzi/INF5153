@@ -1,4 +1,3 @@
-package com.dominikcebula.edu.design.patterns.creational.singleton;
 
 import java.io.ObjectStreamException;
 import java.io.Serializable;

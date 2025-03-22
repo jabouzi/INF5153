@@ -1,4 +1,3 @@
-package com.dominikcebula.edu.design.patterns.creational.singleton;
 
 public class StaticBlockSingleton {
     private final static StaticBlockSingleton INSTANCE;

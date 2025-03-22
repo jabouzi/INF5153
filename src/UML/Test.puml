@@ -1,0 +1,9 @@
+@startuml
+skinparam linetype ortho
+
+Model --> Controller : Updates
+Controller --> Model : Modifies Data
+Controller --> View : Updates UI
+View --> Controller : User Input
+
+@enduml

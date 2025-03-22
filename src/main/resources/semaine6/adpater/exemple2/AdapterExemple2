@@ -1,0 +1,53 @@
+// Interface pour le cliquet
+interface Cliquet {
+    void utiliser();
+}
+
+// Cliquet de 1/2"
+class CliquetDemiPouce implements Cliquet {
+    @Override
+    public void utiliser() {
+        System.out.println("Cliquet de 1/2\" en action");
+    }
+}
+
+// Interface pour la douille
+interface Douille {
+    void connecter();
+}
+
+// Douille de 1/4"
+class DouilleQuartPouce implements Douille {
+    @Override
+    public void connecter() {
+        System.out.println("Douille de 1/4\" connectée");
+    }
+}
+
+// Adaptateur pour connecter un cliquet de 1/2" à une douille de 1/4"
+class AdaptateurCliquetDouille implements Cliquet {
+    private Douille douille;
+
+    public AdaptateurCliquetDouille(Douille douille) {
+        this.douille = douille;
+    }
+
+    @Override
+    public void utiliser() {
+        System.out.println("Adaptateur : connexion du cliquet de 1/2\" à la douille de 1/4\"");
+        douille.connecter();
+    }
+}
+
+// Exemple d'utilisation
+public class AdapterPatternExample {
+    public static void main(String[] args) {
+        // Création des objets
+        Cliquet cliquet = new CliquetDemiPouce();
+        Douille douille = new DouilleQuartPouce();
+
+        // Utilisation de l'adaptateur
+        Cliquet adaptateur = new AdaptateurCliquetDouille(douille);
+        adaptateur.utiliser();
+    }
+}

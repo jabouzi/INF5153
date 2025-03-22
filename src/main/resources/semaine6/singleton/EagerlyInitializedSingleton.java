@@ -1,4 +1,3 @@
-package com.dominikcebula.edu.design.patterns.creational.singleton;
 
 public class EagerlyInitializedSingleton {
     private static final EagerlyInitializedSingleton INSTANCE = new EagerlyInitializedSingleton();

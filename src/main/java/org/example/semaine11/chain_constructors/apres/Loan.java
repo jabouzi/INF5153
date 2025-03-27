@@ -1,8 +1,8 @@
 package org.example.semaine11.chain_constructors.apres;
 
-import org.example.semaine11.chain_constructors.CapitalStrategy;
-import org.example.semaine11.chain_constructors.RevolvingTermROC;
-import org.example.semaine11.chain_constructors.TermROC;
+import org.example.semaine11.common.CapitalStrategy;
+import org.example.semaine11.common.RevolvingTermROC;
+import org.example.semaine11.common.TermROC;
 
 import java.util.Date;
 

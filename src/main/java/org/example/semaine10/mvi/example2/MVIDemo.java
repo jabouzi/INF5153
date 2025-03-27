@@ -9,5 +9,6 @@ public class MVIDemo {
         UserMVIController controller = new UserMVIController(model, view::render);
 
         controller.processIntent(new LoginIntent("user", "password")); // Simulating input
+        controller.processIntent(new LoginIntent("user2", "password2")); // Simulating input
     }
 }

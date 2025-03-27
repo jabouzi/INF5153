@@ -1,5 +1,5 @@
 package org.example.semaine11.chain_constructors.apres;
-import org.example.semaine11.chain_constructors.CapitalStrategy;
+import org.example.semaine11.common.CapitalStrategy;
 
 import java.util.Date;
 
@@ -12,6 +12,6 @@ public class Main {
         Loan loan2 = new Loan(2000.0f, 1000.0f, 4, new Date(), new Date());
 
 // Utilisation du constructeur principal (avec une stratégie personnalisée)
-        Loan loan3 = new Loan(new CapitalStrategy(), 3000.0f, 1500.0f, 5, new Date(), new Date());
+        //Loan loan3 = new Loan(new CapitalStrategy(), 3000.0f, 1500.0f, 5, new Date(), new Date());
     }
 }

@@ -8,5 +8,6 @@ public class MVCDemo {
         UserController controller = new UserController(model, view);
 
         controller.handleLogin("user", "password"); // Simulating input
+        controller.handleLogin("user", "password2"); // Simulating input
     }
 }

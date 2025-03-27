@@ -8,5 +8,6 @@ public class MVPDemo {
         UserPresenter presenter = new UserPresenter(view, model);
 
         presenter.handleLogin("user", "password"); // Simulating input
+        presenter.handleLogin("user2", "password"); // Simulating input
     }
 }

@@ -10,5 +10,6 @@ public class MVVMDemo {
         viewModel.addPropertyChangeListener(evt -> view.updateView((Boolean) evt.getNewValue()));
 
         viewModel.login("user", "password"); // Simulating input
+        viewModel.login("user2", "password2"); // Simulating input
     }
 }

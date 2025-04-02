@@ -1,9 +1,9 @@
 package org.example.semaine11.chain_constructors.avant;
-import org.example.semaine11.common.CapitalStrategy;
+
 import java.util.Date;
 
 public class Main {
-    public static void main() {
+    public static void main(String[] args) {
         // Utilisation du premier constructeur secondaire (sans maturity)
         Loan loan1 = new Loan(1000.0f, 500.0f, 3, new Date());
 

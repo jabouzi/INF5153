@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'io.spring.dependency-management' version '1.1.4'
 }
 
 group = 'org.example'
@@ -13,9 +14,41 @@ dependencies {
     implementation('org.javamoney:moneta:1.4.4')
     implementation('com.fasterxml.jackson.core:jackson-core:2.18.2')
     implementation('com.fasterxml.jackson.core:jackson-databind:2.18.2')
+    implementation('org.springframework.boot:spring-boot-starter-web:1.4.7.RELEASE')
+    implementation 'org.xerial:sqlite-jdbc:3.42.0.0'
+    //testImplementation 'org.springframework.boot:spring-boot-starter-test:3.2.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testImplementation 'org.assertj:assertj-swing:3.17.1'
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+    testImplementation 'org.assertj:assertj-swing-junit:3.17.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.1'
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'org.mockito:mockito-core:5.10.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.10.0'
+    testImplementation 'org.testcontainers:testcontainers:1.19.3'
+    testImplementation 'org.testcontainers:junit-jupiter:1.19.3'
+    testImplementation 'org.xerial:sqlite-jdbc:3.42.0.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+    testImplementation 'org.testcontainers:junit-jupiter:1.18.3'
+
+    // Modules spécifiques selon vos besoins
+    // Par exemple, pour PostgreSQL
+    testImplementation 'org.testcontainers:postgresql:1.19.3'
 }
+
+//dockerCompose {
+//    useComposeFiles = ['docker-compose.test.yml']
+//    waitForTcpPorts = true
+//    removeContainers = true  // Définissez ceci à true pour supprimer les conteneurs
+//    stopContainers = true
+//}
+//
+//// Utilisez cette syntaxe à la place
+//test.dependsOn 'composeUp'
+//test.finalizedBy 'composeDown'
 
 test {
     useJUnitPlatform()
